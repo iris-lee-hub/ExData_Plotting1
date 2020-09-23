@@ -1,3 +1,5 @@
+# Data is downloaded and downsized to Formatted.csv in the DataFormatting.R code
+
 ## Introduction
 
 This assignment uses data from
