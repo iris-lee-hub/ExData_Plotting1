@@ -1,6 +1,6 @@
 data <- read.csv("Formatted.csv")
 
-# data$datetime<- strptime(data$datetime, tz = "GMT", format = "%d-%m-%Y %H:%M:%S")
+# data$datetime<- strptime(data$datetime, tz = "GMT", format = "%Y-%m-%d %H:%M:%S")
 
 png("plot1.png")
 

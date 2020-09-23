@@ -3,6 +3,11 @@
 # Converts date and time variables to date/time classes
 # Extracts data from  2007-02-01 and 2007-02-02 only
 
+temp <- tempfile()
+download.file("https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip",temp)
+unz(temp, "data/household_power_consumption.txt")
+unlink(temp)
+
 # Reads in only the first 500,000 rows, which inclides 
 data <- read.table("data/household_power_consumption.txt", nrows = 500000, 
                    header = TRUE, sep = ";", na.strings = "?")
